@@ -12,7 +12,7 @@ const Navbar = ({ active }) => {
         <p className="font-bold self-center text-white  text-xl">MANTRA</p>
       </div>
       <ul className="self-center text-white flex flex-row gap-3 font-medium px-2 ">
-        <Link href={"/DashBoard"}>
+      <Link href={"/DashBoard"}>
           {" "}
           <li
             className={`cursor-pointer  px-2 py-0.5   ${
@@ -21,8 +21,17 @@ const Navbar = ({ active }) => {
             Home
           </li>
         </Link>
+        <Link href={"/Services"}>
+          {" "}
+          <li
+            className={`cursor-pointer  px-2 py-0.5   ${
+              active == "Services" ? "active" : undefined
+            } transition-colors duration-100`}>
+            Services
+          </li>
+        </Link>
 
-        <Link href={"/HealthCare"}>
+        {/* <Link href={"/HealthCare"}>
           {" "}
           <li
             className={`cursor-pointer  px-2 py-0.5   ${
@@ -30,9 +39,9 @@ const Navbar = ({ active }) => {
             } transition-colors duration-100`}>
             Health
           </li>
-        </Link>
+        </Link> */}
 
-        <Link href={"/Guide"}>
+        {/* <Link href={"/Guide"}>
           {" "}
           <li
             className={`cursor-pointer  px-2 py-0.5   ${
@@ -49,7 +58,7 @@ const Navbar = ({ active }) => {
             } transition-colors duration-100`}>
             Share Report
           </li>
-        </Link>
+        </Link> */}
 
         <Link href={"/Report"}>
           {" "}
