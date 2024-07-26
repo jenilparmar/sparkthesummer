@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.active{
-    background-color: #06b6d4;
-    border-radius: 10px;
-  
-     text-align: center;
-     color: black;
+.active {
+  background-color: #06b6d4;
+  border-radius: 10px;
 
+  text-align: center;
+  color: black;
+  box-shadow: 0px 0px 10px 1px black;
 }

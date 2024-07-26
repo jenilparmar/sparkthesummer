@@ -4,8 +4,9 @@ import React from 'react'
 const Guide = () => {
   return (
     <div>
-      
       <Navbar active={'Guide'}/>
+      
+      
     </div>
   )
 }
