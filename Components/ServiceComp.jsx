@@ -6,9 +6,9 @@ const router = useRouter();
   return (
     <>
       <div className="p-4 md:w-1/3">
-        <div className="h-full border-2 border-black border-opacity-60 rounded-xl overflow-hidden">
+        <div className="h-full border-2 hover:border-4 transition-all hover:shadow-xl duration-100 border-cyan-700 border-opacity-60 rounded-xl overflow-hidden">
           <img
-            className="img lg:h-48 md:h-36 p-2 rounded-lg object-contain w-full cursor-pointer object-center"
+            className="img active:scale-95 lg:h-48 md:h-36 p-2 rounded-lg object-contain w-full cursor-pointer object-center"
             onClick={()=>{
                 router.push(`/${Service}`)
                 }}
