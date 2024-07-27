@@ -21,7 +21,8 @@ function Services() {
             <ServiceComp
               imageSrc={"https://images.moneycontrol.com/static-mcnews/2022/09/Health-insurance.png?impolicy=website&width=1600&height=900"}
               Name={"REHAB "}
-              Service={""}
+             
+              Service={"HealthChatBot"}
 
               disc={" Responsive Emotional Help & Advisory Bot"}
             />

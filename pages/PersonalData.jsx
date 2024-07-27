@@ -53,8 +53,16 @@ function PersonalData() {
   
       const result = await response.json();
       console.log('Form submitted successfully:', result);
-  
-      // Reset form fields after successful submission
+      const res = await fetch(' http://127.0.0.1:5000/post-data', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      console.log(await res.json());
+      
       setFormData({
         Email: email,
         Glucose: '',
